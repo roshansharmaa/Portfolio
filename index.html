@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portFolio</title>
+    <link rel="icon" type="image/x-icon" href="/alogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgba(0, 0, 33);
+            color: antiquewhite;
+            font-family: "Merriweather", serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            background-color: rgb(106, 102, 227);
+            height: 45px;
+            align-items: center;
+        }
+
+        .left {
+            font-size: 23px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li {
+            list-style-type: none;
+            margin: 0px 23px;
+        }
+
+        nav li:hover {
+            color: rgb(112, 214, 243);
+            font-size: large;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0px;
+        }
+
+        .section1>div {
+            width: 25%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 100px 0px;
+        }
+
+        .rightsection img {
+            width: 100%;
+
+            margin: 50px 0px;
+
+        }
+
+        .color {
+            color: rgb(227, 133, 216);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+            font-size: 84px;
+        }
+
+        .section2 {
+            margin-top: 230px;
+        }
+
+
+        .br {
+
+            color: red;
+            text-align: center;
+            font-size: 34px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+
+        /* From Uiverse.io by Yaseen549 */
+        .card {
+            /* width: 190px; */
+            /* height: 254px; */
+            margin: 20px;
+            border-radius: 30px;
+            background: #212121;
+            box-shadow: 10px 10px 20px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+        }
+
+        .card-container{ 
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .card{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* 
+        .card-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        } */
+
+        .card-content {
+            padding: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cards-title {
+            margin: 0;
+            font-size: 1.5em;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        .section4 {
+            margin-top: auto;
+        }
+
+        .cards-description {
+            margin: 8px 0;
+            font-size: 1em;
+            color: #ccc;
+            text-shadow: 0 0 5px #0f0;
+        }
+
+        .cardsn-button {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: rgb(17, 241, 36);
+            color: #000;
+            margin-top: 23px;
+            border-radius: 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-shadow: 0 0 5px #0f0;
+            color: black;
+            font-size: large;
+            font-family: "Merriweather", serif;
+        }
+
+        .cardst-button {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: rgb(17, 241, 36);
+            color: #000;
+            margin-top: 23px;
+            border-radius: 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-shadow: 0 0 5px #0f0;
+            font-family: "Merriweather", serif;
+            margin-top: 23px;
+
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: rgb(17, 241, 36);
+            color: #000;
+            margin-top: 23px;
+            border-radius: 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-shadow: 0 0 5px #0f0;
+            font-family: "Merriweather", serif;
+
+        }
+
+
+        .card-button:hover {
+            background-color: rgb(246, 36, 232);
+            box-shadow: 0 0 15px rgb(247, 56, 212);
+        }
+        .cardstt-button:hover {
+            background-color: rgb(246, 36, 232);
+            box-shadow: 0 0 15px rgb(247, 56, 212);
+        }
+        .cardsn-button:hover {
+            background-color: rgb(246, 36, 232);
+            box-shadow: 0 0 15px rgb(247, 56, 212);
+        }
+        .cardst-button:hover {
+            background-color: rgb(246, 36, 232);
+            box-shadow: 0 0 15px rgb(247, 56, 212);
+        }
+        .card-title {
+            text-align: center;
+            color: white;
+            margin-bottom: 23px;
+
+        }
+
+        .cards {
+            background-color: neonpink;
+            /* Neon pink color */
+            color: white;
+            /* Text color */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.2em;
+            /* Adjust text size as needed */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 0 15px #0f0;
+
+
+        }
+
+        .container {
+            text-align: center;
+            background: #111;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 58px;
+            margin-left: 450px;
+
+            margin-bottom: 58px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        h1 {
+            color: #0f0;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.8);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            color: #0f0;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 2px solid #0f0;
+            border-radius: 5px;
+            background: #222;
+            color: #fff;
+            font-size: 1rem;
+            box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            background: #333;
+            border-color: #0f0;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0f0;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        button:hover {
+            background: #0c0;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+        }
+
+        footer {
+            background-color: #151515;
+            height: 250px;
+
+        }
+
+        .footer {
+            display: flex;
+            display: flex;
+            padding: 23px 143px;
+
+            justify-content: space-evenly;
+
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 23px;
+        }
+
+        .text {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .one {
+            color: cyan;
+        }
+
+        .info {
+            width: 23px;
+            display: inline;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            row-gap: 12px;
+        }
+
+
+        img {
+            height: 40vh;
+            width: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            aspect-ratio: 8/9;
+            max-width: 1;
+            object-fit: contain;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhishek.</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/"></a>Home</li>
+                    <li><a href="/"></a>Contact me</li>
+                    <li><a href="/"></a>Skills</li>
+                    <li><a href="/"></a>Projects</li>
+                    <li><a href="/"></a>sevices</li>
+
+
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="leftsection">
+                Hi, My name is <span class="color">Abhishek</span>
+                <div>And I am a web developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="abhin.png" alt="">
+            </div>
+        </section>
+        <section class="section2">
+            <br>
+            <h1 class="br">skills</h1>
+            <br>
+            <div class="card-container">
+                <div class="card">
+                    <img src="html.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">HTML</h2>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="css.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">CSS</h2>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="tail.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Tailwin CSS</h2>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="bootstrap.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Boostrap</h2>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="javas.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">JavaScript</h2>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="reactjas.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">React Js</h2>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="section3">
+            <h1 class="br" style="margin-top: 10px;">Projects</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="news.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">News updats</h2>
+                        <button class="cardsn-button">Live link</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="tc.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Text Convertion</h2>
+                        <button class="cardst-button">Live Link</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="rpc.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">stone paper secisso</h2>
+                        <button class="card-button">Live Link</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="tic.png" alt="Card Image" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">tig tag toe</h2>
+                        <button class="cardstt-button">Live Link</button></a>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            </div>
+            </div>
+        </section>
+        <br>
+        <section class="section4">
+            <br>
+            <h1 class="br">contact me</h1>
+            <br>
+            <div class="container">
+                <h1>Contact Me</h1>
+                <div class="contact">
+                    <form action="#" method="poll">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="none">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="one">
+                <h3>Abhishek portfolio</h3>
+            </div>
+            <div class="two">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="tbree">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+
+            </div>
+            <div class="four"></div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+
+        </div>
+      
+        <div class="text">
+            copyright&#169;Abhishek portfolio.com|| All rights are reserved
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'stared a intenship in codesoft', 'marn stack developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+
+        let newsButton = document.querySelector(".cardsn-button");
+        let textutails = document.querySelector(".cardst-button")
+        let tictag = document.querySelector(".cardstt-button")
+        let rps = document.querySelector(".card-button")
+
+
+        let redirectTotextualis = () => {
+            let turl = "https://textutails-kappa.vercel.app/";
+            window.location.href = turl;
+        }
+        let redirectTotictag = () => {
+            let tturl = "https://abhishek-tic-tac-toe-game.netlify.app/";
+            window.location.href = tturl;
+        }
+
+        let redirectToNews = () => {
+            let url = "https://news-app-zeta-umber.vercel.app/";
+            window.location.href = url;
+            
+        }
+        let redirectTorock = () => {
+            let rurl = "https://abhishek-stone-paper-siscor-game.netlify.app";
+            window.location.href = rurl;
+        }
+
+
+        newsButton.addEventListener("click", redirectToNews);
+        textutails.addEventListener("click", redirectTotextualis);
+        tictag.addEventListener("click", redirectTotictag);
+        rps.addEventListener("click", redirectTorock)
+
+    </script>
+
+</body>
+</body>
+
+</html>
